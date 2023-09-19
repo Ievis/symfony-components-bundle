@@ -1,0 +1,23 @@
+show_schedules_route:
+  path: /
+  controller: App\Controller\MainController::index
+  options:
+    middlewares:
+
+  methods: GET
+
+get_create_schedule_route:
+  path: /schedules/create
+  controller: App\Controller\ScheduleController::show
+  options:
+    middlewares:
+
+  methods: GET
+
+post_create_schedule_route:
+  path: /schedules/create
+  controller: App\Controller\ScheduleController::create
+  options:
+    middlewares:
+
+  methods: POST
